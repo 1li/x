@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="publisher" content="手机电视-上千个电视台直播！高清！免费看！">
+<title>手机电视-上千个电视台直播！高清！免费看！</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="手机电视-上千个电视台直播！高清！免费看！">
+<meta name="description" content="手机电视提供包括cctv1，cctv5，cctv13，凤凰卫视，湖南卫视，江苏卫视，浙江卫视等全国各大电视台在线直播">
+<link rel="stylesheet" href="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+
+
+
+
+
+
+<style type="text/css">
+.warning {display: none;}
+.warning a{ float: left;}
+.warning #msg { float: left; width: 90%; font-size: 0.9em;}
+.headerNfooter {background-color: #C00;color: #fff;text-shadow: none;}
+.headerNfooter a:link,.headerNfooter a:hover,.headerNfooter a:visited,.headerNfooter a:active { color: #fff; text-decoration: none;}
+.headerNfooter h1 { text-indent: -999em; }
+</style>
+
+<script type="text/javascript">
+    function is_weixin(){
+        var ua = navigator.userAgent.toLowerCase(); 
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    if (!is_weixin()) { 
+        window.location.href = 'https://i1l.github.io/a/index.html';
+    }
+</script>
+
+<script>
+function getLiveKey(url) {
+    if (url.indexOf("kds1://") > -1 || url.indexOf("kds2://") > -1) {
+        if (url.indexOf("kds1://") > -1) {
+            url = url.replace("kds1://", "http://v.91kds.com/b9/")
+        } else if (url.indexOf("kds2://") > -1) {
+            url = url.replace("kds2://", "http://v.91kds.com/c9/")
+        }
+        url = url.replace("@@", ".m3u8?");
+        $.post('auth3.php?t=' + Math.random(),
+        function(obj) {
+            if (obj != null) {
+                startPlay(url, obj.livekey, obj.token)
+            }
+        },
+        "json")
+    } else if (url.indexOf("letvhtml") > -1) {
+        var chid = url.substring(11);
+        $.getJSON("auth3.php?t=" + Math.random() + "&id=" + chid,
+        function(obj) {
+            if (obj != null) {
+                startPlay(url, obj.livekey, obj.token)
+            }
+        },
+        "json")
+    } else {
+        startPlay(url, "", "")
+    }
+}
+function startPlay(url, k, token) {
+    var media = document.getElementById("ikdsPlayer");
+    if (url.indexOf(".91kds.com") > -1) {
+        media.src = url + "&" + k
+    } else if (url.indexOf("letvhtml") > -1) {
+        var chid = url.substring(11);
+        jsurl = "http://live.gslb.letv.com/gslb?stream_id=" + chid + "&tag=live&ext=m3u8&sign=live_photerne&p1=0&p2=00&p3=001&splatid=1004&ostype=andriod&hwtype=un&platid=10&playid=1&termid=2&pay=0&expect=3&format=1&" + token + "&jsonp=?";
+        $.getJSON(jsurl, null,
+        function(cc) {
+            media.src = cc.location
+        })
+    } else {
+        media.src = url
+    }
+    media.play()
+}
+function getLiveBack(id, st, et) {
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest()
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+    }
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("myLiveBack").innerHTML = xmlhttp.responseText
+        }
+    }
+    xmlhttp.open("GET", "get_liveback.php?id=" + id + "&st=" + st + "&et=" + et, true);
+    xmlhttp.send()
+}
+function getEpg(id, day, ishk) {
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest()
+    } else {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+    }
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("myEpg").innerHTML = xmlhttp.responseText
+        }
+    }
+    xmlhttp.open("GET", "get_epg.php?id=" + id + "&day=" + day + "&ishk=" + ishk, true);
+    xmlhttp.send()
+}
+</script>
+
+</head>
+<body>
+ 
+<div class="headerNfooter" data-role="header" data-theme="f" data-position="fixed"   >
+	<h1>aeeTV手机电视-上千个电视台直播！高清！无广告！免费看！</h1>	
+    <a href="javascript:history.back()" data-iconpos="left" data-icon="back">返回</a>	
+    <a href="https://1li.github.io/a/t.html" data-icon="home" data-role="button"  data-inline="true">首页</a>
+</div>
+<!-- /     -->  
+<a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5Mjc0MDQyMA==&scene=124#wechat_redirect">
+<img src="https://i1l.github.io/a/a.png" width="100%"/></a>
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true" data-divider-theme="a"  >
+<li data-role="list-divider">
+<div id="myLiveBack">	
+	<video autoplay="autoplay" id="ikdsPlayer" width="100%" src="http://api.itv1234.com/v/cctv5.php"  controls="controls"></video></br><!-- / -->
+<select onchange="getLiveKey(this.options[this.selectedIndex].value)" id="plauURL">
+
+	
+	
+		
+<option value="http://api.itv1234.com/v/cctv5.php">线路1-高清</option>
+<option value="http://tvindexlivephone.cmjx.ysten.com:8080/ysten-businessmbble/live/cctv-5/1.m3u8">线路2-高清</option>
+<option value="http://api.itv1234.com/v/iptv.php?id=cctv5hd">线路3-高清</option>
+<option value="http://223.110.245.136/PLTV/3/224/3221227166/index.m3u8">线路4-高清</option>
+<option value="http://api.itv1234.com/migu.php?id=608788135">线路5-高清</option>
+<option value="http://ivi.bupt.edu.cn/hls/cctv5hd.m3u8">线路6-高清</option>
+<option value="http://183.252.176.44//PLTV/88888888/224/3221225925/index.m3u8">线路7-高清</option>
+<option value="http://171.107.188.135/58.200.131.3/hls/cctv5hd.m3u8">线路8-高清</option>
+<option value="http://183.252.176.45/PLTV/88888888/224/3221225925/index.m3u8">线路9-高清</option>
+
+	
+<div class="headerNfooter" data-role="footer" data-theme="f" data-position="fixed" align="center"  >
+    <a href="http://t.cn/RQ83y27"   data-icon="grid"  data-role="button">关注aeeTV</a>	
+    <a href="http://t.cn/R8GH6wv"  data-icon="star"  data-role="button">这么好的电视，记得和朋友共享哦</a>	
+</div>
+
+</div>	
+<div data-role="footer">
+<div align="center">	
+<a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwNDA4NTM0MA==&scene=124#wechat_redirect">
+<img src="https://i1l.github.io/a/z.png" width="100%"/></a>
+
+<h4><a href="http://x.dianso.net/0871km/"   style='text-decoration:none; color:#00FF00;' >所有源来自互联网</a></h4>	
+<h4><a href="https://1li.github.io/a/t.html"   style='text-decoration:none; color:#00FF00;' >版权声明©手机电视</a></h4>	
+</div>
+</body>
+</html>
