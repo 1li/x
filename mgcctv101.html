@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>咪咕视频-CCTV1综合</title>
+    <link href="http://m.miguvideo.com/wap/resource/migu/css/common.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/Detail.css" />
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/Detail_live.css" />
+    <link href="http://m.miguvideo.com/wap/resource/migu/css/plugins/swiper.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/person_center.css" />
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/migu_icon.css" />
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/plugins/jquery-2.2.3.js"></script>
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/time.js"></script>
+    <script type="text/javascript" src="https://clientdata.miguvideo.com:7090/script/migujsdata2.js"></script>
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/tripledes.js"></script>
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/mode-ecb-min.js"></script>
+    <script type="text/javascript">
+        _migudata.init(true);
+    </script>
+</head>
+<body>
+<input type="hidden" id="contId" value="608807427">
+<input type="hidden" id="isLogin" value="0" />
+<input type="hidden" id="aaaUserId" value=""/>
+<input type="hidden" id="miguvideoclient" value="0">
+<!--版权限制-->
+<!--获取直播流-->
+<!--直播限制-->
+<!--流加密和混淆-->
+<!--判断是否是回看，若是，获取回放url-->
+<!--流加密和混淆-->
+<input type="hidden" id="isOrd" value="0" />
+<input type="hidden" id="isV" value="" />
+<div id="contains">
+
+<div id="back">
+        <img width="100%" src="img/icon_back.png" alt="">
+    </div>
+    <script>
+       
+        document.getElementById("back").style.position="absolute"
+        document.getElementById("back").style.left="50px"
+        document.getElementById("back").style.top="7px"        
+        document.getElementById("back").style.width="5%"
+
+        document.getElementById("back").addEventListener('click',function(e){
+            window.history.go(-1)
+        })
+        
+
+    </script>
+    <!--分享图片-->
+    <img src="/publish/poms/image/2200/291/011/C1_H32_sc.jpg" width="0" height="0" style="position:absolute;"/>
+    <input type="hidden" id="prdpackId" value="1002601">
+    <div class="person-center-top clearfix">
+        <a href="http://m.miguvideo.com/wap/resource/migu/index.jsp" class="migu-logo"></a>        
+        <div class="display-inline pull-right">
+            <a href="http://m.miguvideo.com/wap/resource/migu/search/search.jsp"><img src="http://m.miguvideo.com/wap/resource/migu/image/icon/search2.png" style='margin-left:20px;' width="20px"></a>
+            <a href="http://m.miguvideo.com/wap/resource/migu/person_center/person_center.jsp"><img src="http://m.miguvideo.com/wap/resource/migu/image/icon/user2.png" style="margin-left:20px;" width="20px"></a>
+            <a href="http://m.miguvideo.com/wap/resource/migu/person_center/history_record.jsp"><img src="http://m.miguvideo.com/wap/resource/migu/image/icon/history2.png" style="margin-left:20px;" width="20px"></a>
+        </div>
+    </div>
+    <!--div class="nav-wrap" id="navWrap">
+        <nav class="clearfix">
+            <ul>
+                <li class="font-14"><span>推荐</span></li>
+                <li class="font-14"><span>资讯</span></li>
+                <li class="font-14"><span>奥运</span></li>
+                <li class="font-14"><span>发现</span></li>
+                <li class="font-14"><span>福利</span></li>
+                <li class="font-14"><span>VIP</span></li>
+                <li class="font-14"><span>我的</span></li>
+            </ul>
+        </nav>
+    </div-->
+
+    
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/plugins/jquery-2.2.3.min.js"></script>
+    <script src="http://m.miguvideo.com/wap/resource/migu/script/head.js"></script><div class="nav-wrap">
+        <div id="video-bg">
+            <div class="videos-contain">
+                <div class="videos" style="width:100%;height:210px;">
+                    <video src="" id="video1" style="width:100%; height:100%;" webkit-playsinline playsinline controls></video>
+                    <div id="Pilot" style="bottom:65px;height:30px;line-height:30px;text-align:center;position:relative; color:#BE9546; z-index:100;">
+                      </div>
+                    <script type="text/javascript">
+
+                        $(function () {
+                            if('false'!=true){
+                                if("" != "1"){
+                                    /*$("#video1").attr({
+                                 "src": "http://h5live.gslb.cmvideo.cn/wd-shandonghd-35000778/index.m3u8?msisdn=0456855675167987654321&mdspid=&spid=699010&netType=1&sid=5500041882&pid=2028597139&timestamp=20170818185702&SecurityKey=20170818185702&resourceId=&resourceType=&client_ip=221.181.101.37&Channel_ID=1004_10010001005&ProgramID=619618278&ParentNodeID=-99&assertID=5500041882&encrypt=b6bd98acd17d90e6782e26d2b02d0184",
+                                 "controls":"controls"
+                                 });*/
+                                     if( "" == "1"){ 
+                                        document.getElementById("Pilot").innerHTML="老板说了，肥水不流外人田，想看好节目就得下载咪咕视频客户端T_T";
+                                        $("#video1").attr({
+                                              "controls":false
+                                          });
+                                    }else{
+                                      if('' != ""){
+                                          $("#video1").attr({
+                                              "src":_mv_addr(''),
+                                              "controls":"controls"
+                                          });
+                                      }else{
+                                          $("#video1").attr({
+                                              "src":_mv_addr('iD5/pKVIO5xcCXRUH0bxvyIk3Or/Yvm9T4rtLmfyqeFZYxy2nRzHrrZPZ9pzNiLo3tK2GzNpWfEtM3ezaWk2p4GfCxoOeYklCStXkJkQlwik0Hbgi4QpBnm5RB97dtnqpt73mdb+Ejv/pFzM7ROqrhFt3Fs5+vEpV8zcAm0OeA/PROueDl7/chDzOyQi20v6w3KGANuRN2fhScuG0ngj9/nQ1J6qM6iPnCTW0Mvh+j0dl4YGqUkTWv6/YAYcjFH/5anxAnT9G5v5/4TtoZ+EEd0dSeEXjIEgnQt8rPKQgB3+f+mQLQda3sfpb12kw9i2fCCiY8rgN1SuBDbPKJihvIXfawHJTzje5+RTptqO3OsDU4BA6ieMiCnpNeuFOsKZF9qu4F/Yew+IQPsOmk/BNxFLleAluEVueQZ1FCrObB9v/l+5fQqwcyqydtCYhU1uw1gpxJ+1iAaXq6fZCeQzfsAiPjHn+Dhv9CZhFC2zMGhGfVNn+7KrRA=='),
+                                              "controls":"controls"
+                                          });
+                                      }
+                                   }
+                                }else{
+                                    alert("由于版权问题，该内容无法播放!");
+                                }
+                            }else{
+                                $("#Pilot").html("非常抱歉的通知您：由于版权合约的限制，<br/>暂时不能对您所在的国家或地区提供服务。感谢您的理解和支持");
+                            }
+
+                        });
+                    </script>
+                </div>
+            </div>
+            <!-- end videos_contain -->
+        </div>
+        <!-- end video-bg -->
+        <div class="awake"><a id="appDiaoqi" style="color:#fff"><img src="http://m.miguvideo.com/wap/resource/migu/image/miguapp.png" height="20" /><span>打开咪咕视频，提升3倍流畅度！</span></a></div>
+        <!-- end awake -->
+        <div class="mains-contain">
+            <div class="mains">
+                <div class="videotitile fun-video">
+                    <!---->
+                    <div class="videot-center rate light-grey font-12" id="Rates" onclick="rates()">高清</div>
+                    <div class="rate-main" id="rate-main" style="display:none;">
+                        <img src="http://m.miguvideo.com/wap/resource/migu/image/rate-s02.png"class="rate-s"/>
+                        <ul class="rate-ul font-12 white">
+                            <li>超清</li>
+                            <li class="orange">高清</li>
+                            <li>标清</li>
+                        </ul>
+                    </div>
+                    <!-- end 码率 -->
+                    <div class="videot_right" style="top:12px; margin-right:10px;">
+                        <span class="migu-icon-020 migu-icon-width-20 migu-icon-center" id="collect" onclick="addFavory()"></span>
+                            <span class="migu-icon-019 migu-icon-width-20 migu-icon-center" style="display:none"></span>
+                        <span class="migu-icon-029 migu-icon-width-20 migu-icon-center " onClick="popbg04()" id="share"></span>
+                    </div>
+                    <div class="popbg" id="popbg" onClick="popbg01()" ontouchstart="popbg02()" style="display: none;"></div>
+                    <!--end popbg-->
+                    <div class="sharep" id="shareps" style="display:none;">
+                        <div class="sharep01">
+                            <h1 class="sharep01-h1 font-18 grey">分享到</h1>
+                            <ul class="sharep01-ul">
+                                <li onClick="share('CCTV1综合','http://221.181.100.151:8081http://m.miguvideo.com/wap/resource/migu/detail/Detail_live.jsp?cid=608807427')">
+                                    <div class="sharep-img"><img src="http://m.miguvideo.com/wap/resource/migu/image/share_icon01.png"></div>
+                                    <div class="font-12 grey">新浪微博</div>
+                                </li>
+                                <li id="micpy" onClick="popbg()">
+                                    <div class="sharep-img"><img src="http://m.miguvideo.com/wap/resource/migu/image/share_icon02.png"></div>
+                                    <div class="font-12 grey">微信朋友圈</div>
+                                </li>
+                                <li id="mic" onClick="popbg03()">
+                                    <div class="sharep-img"><img src="http://m.miguvideo.com/wap/resource/migu/image/share_icon03.png"></div>
+                                    <div class="font-12 grey">微信</div>
+                                </li>
+                            </ul>
+                            <div class="sharep-cancel font-18 grey" onclick="popbg04no()">取消</div>
+                        </div>
+                        <div class="sharep02"></div>
+                    </div>
+                </div>
+                <!--end module head_videos-->
+                <div class="module Derail-live-Drama">
+                    <div class="Detail-h1 font-16 grey">节目单</div>
+                    <!-- end Detail-h1 -->
+                    <div class="swiper-container live-top font-14 grey" id="live-top" style="width:100%;">
+                        <div class="swiper-wrapper" id="time-date">
+                            <div class="swiper-slide active-nav"><span class="date">1101</span><span class="live-top-vip font-10 white">会员</span></div>
+                            <div class="swiper-slide"><span class="date">1102</span><span class="live-top-vip font-10 white">会员</span></div>
+                            <div class="swiper-slide"><span class="date">1103</span><span class="live-top-vip font-10 white">会员</span></div>
+                            <div class="swiper-slide"><span class="date">1104</span><span class="live-top-vip font-10 white">会员</span></div>
+                            <div class="swiper-slide"><span class="date">1105</span></div>
+                            <div class="swiper-slide"><span class="date">昨天</span></div>
+                            <div class="swiper-slide"><span class="date">今天</span></div>
+                            <div class="swiper-slide"><span class="date">明天</span></div>
+                        </div>
+                    </div><!-- end live-top -->
+                    <div class="swiper-container live-thumbs" id="live-thumbs" style="width:100%;">
+                        <div class="swiper-wrapper">
+
+                        </div>
+                    </div>
+                    <!-- end live-thumbs -->
+                </div>
+                <!--end module Drama-->
+            </div>
+            <!-- div class="copyright font-12 orange">
+                打造健康环境，净网2016！
+            </div -->
+        </div>
+        <!-- end mains-contain -->
+    </div>
+</div>
+
+<!-- end nav-wrap -->
+
+</div>
+<!--end contains-->
+<div class="appd" id="appd">
+    <div class="appd-left white" onClick="appNone()">&times;</div>
+    <a id="appXiazai">
+        <div class="appd-center">上客户端</br>查看更多精彩视频！</div>
+        <div class="appd-right"><span style="color:#fff;text-decoration:none;">立即下载</span></div>
+    </a>
+</div>
+<!--提示信息-->
+<div class="pop-div" id="pop-warn" style="display: none;">
+    <p><img class="warn-pic" src="http://m.miguvideo.com/wap/resource/migu/image/icon/login-suss.png" /></p>
+    <p class="font-14 white warn-info"></p>
+</div>
+<div id="popDiv" class="display-none">
+    <h2>
+        <div class="ch_icon02" id="hid">温馨提示</div>
+    </h2>
+    <div>
+        <p id="tcwz" style="height:55px;">登录后才能参与本活动，是否登录？</p>
+        <div id="divId">
+            <a id="hrefid" style="width:50%;float:left;color:#3c3c3c;" onClick="closeA()">取消</a><a href="https://passport.migu.cn/login?sourceid=203005&apptype=2&forceAuthn=true&isPassive=false&authType=&display=&callbackURL=http://m.miguvideo.com/wap/resource/migu/detail/Detail_live.jsp?cid=608807427&relayState=login" id="hrefid2" style="width:50%;float:right;">确定</a>
+        </div>
+    </div>
+</div>
+<div id="sctck" class="sctck"></div>
+<div class="bg"></div>
+<script src="http://m.miguvideo.com/wap/resource/migu/script/plugins/jquery-2.2.3.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/script/plugins/swiper.min.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/script/singleLogin.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/miguH5/js/singleLogin.js"></script>
+<!--<script src="http://m.miguvideo.com/wap/resource/migu/script/propertyFileLists.js"></script>-->
+<script src="http://m.miguvideo.com/wap/resource/migu/script/Detail.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/detail/DetailLive_data.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/detail/test/jweixin-1.0.0.js.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/detail/test/wx_sharE_fridens.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/script/plugins/weixinSecondShare.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+document.getElementsByClassName("person-center-top")[0].children[0].href = "javascript:;"
+
+    document.getElementsByClassName("person-center-top")[0].addEventListener('click',function(e){
+            window.history.go(-1);
+
+            return false;
+        })
+    $(function () {
+
+        $.weixinSecondShare('CCTV1综合', '更多精彩，尽在咪咕视频。', '/publish/poms/image/2200/291/011/C1_H32_sc.jpg');
+    })
+    var rateMain=document.getElementById("rate-main");
+    var oHd = document.getElementById('Rates');
+    var m_video = document.getElementById('video1');
+    var pop_warn = document.getElementById('pop-warn');
+    var popDiv = document.getElementById('popDiv');
+    $(function(){
+        addHistory();
+        isCollect();
+        $("#time-date > div:eq(0)").find(".date").text(GetDateStr(-6));
+        $("#time-date > div:eq(1)").find(".date").text(GetDateStr(-5));
+        $("#time-date > div:eq(2)").find(".date").text(GetDateStr(-4));
+        $("#time-date > div:eq(3)").find(".date").text(GetDateStr(-3));
+        $("#time-date > div:eq(4)").find(".date").text(GetDateStr(-2));
+        var prdpackId=document.getElementById("prdpackId").value;
+        var Version=navigator.appVersion;
+        if((prdpackId=='1003341' && Version.match(/MicroMessenger/i)=='MicroMessenger') || (prdpackId=='1003341' && Version.match(/WeiBo/i)=='WeiBo')){
+            alert("因版权方要求，请点击右上角，从浏览器打开观看奥运节目，请见谅。");
+            document.getElementById("video1").src="";
+        }
+        //调起客户端
+        /*document.getElementById('appDiaoqi').onclick = function(e){
+         // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+         // 否则打开a标签的href链接
+         var ifr = document.createElement('iframe');
+         ifr.src = 'miguvideo://miguvideo?path=live&contentId=608807427&objType=video';
+         ifr.style.display = 'none';
+         document.body.appendChild(ifr);
+         window.setTimeout(function(){
+         document.body.removeChild(ifr);
+         },1000)
+         };*/
+        //调起客户端 06-30
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        $('#appDiaoqi,#appXiazai').click(function(e){
+            var BackgroundLive = $(".swiper-wrapper .orange").find("a").html();
+            var timeArea = $(".swiper-wrapper .orange").find("span").eq(0).html();
+            var curName = $(".swiper-wrapper .orange").find("span").eq(1).html();
+            var billId = $(".swiper-wrapper .orange").attr("data-billid");
+            var datTime = $(".swiper-wrapper .orange").attr("data-time");
+            var strTime = $(".swiper-wrapper .orange").attr("data-starttime1");
+            var times=datTime+" "+strTime;
+            console.log(times);
+            // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+            // 否则打开a标签的href链接
+            var ifr = document.createElement('iframe');
+            if(BackgroundLive=="重播"){
+                if(isiOS){
+                    window.location.href = 'miguvideo://miguvideo?path=live&nodeId=608807427&timeArea='+timeArea+'&nodeName=CCTV1综合&curName='+curName+'&startTime='+times+'&objType=videolive&contentId=608807427&playBillId='+billId;
+                }else{
+                    ifr.src = 'miguvideo://miguvideo?path=live&nodeId=608807427&timeArea='+timeArea+'&nodeName=CCTV1综合&curName='+curName+'&startTime='+times+'&objType=videolive&contentId=608807427&playBillId='+billId;
+                }
+                ifr.style.display = 'none';
+                document.body.appendChild(ifr);
+
+                var android_schema = encodeURIComponent("miguvideo://miguvideo?path=live&nodeId=608807427&timeArea="+timeArea+"&nodeName=CCTV1综合&curName="+curName+"&startTime="+times+"&objType=videolive&contentId=608807427&playBillId="+billId);
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.cmcc.cmvideo&android_schema="+ android_schema;
+
+            }else{
+                if(isiOS){
+                    window.location.href = 'miguvideo://miguvideo?path=live&contentId=608807427&objType=video';
+                }else{
+                    ifr.src = 'miguvideo://miguvideo?path=live&contentId=608807427&objType=video';
+                }
+                ifr.style.display = 'none';
+                document.body.appendChild(ifr);
+                window.setTimeout(function(){
+                    var android_schema = encodeURIComponent("miguvideo://miguvideo?path=live&contentId="+608807427+"&objType=video");
+                    window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.cmcc.cmvideo&android_schema="+ android_schema;
+                },1000)
+            }
+        });
+    });
+    //页面加载记录播放次数
+    m_video.onloadstart = function (){
+        _migudata.logEvent('videoPlayEvent',
+            {
+                'product':'miguvideo',
+                'cuid': '',
+                'contentId': '608807427',
+                'title': 'CCTV1综合'
+            });
+    };
+    //判断手机型号
+    //document.getElementById('appXiazai').href='http://a.app.qq.com/o/simple.jsp?pkgname=com.cmcc.cmvideo';
+    //  document.getElementById('appDiaoqi').href='http://a.app.qq.com/o/simple.jsp?pkgname=com.cmcc.cmvideo';
+    //下载层隐藏
+    function appNone(){
+        document.getElementById('appd').style.display='none';
+    }
+    var miguvideoclient = $("#miguvideoclient").val();
+    if(miguvideoclient == "1"){
+           appNone();
+    }
+      
+    /*var station_lef = document.getElementById("rate-main");
+     dd = station_lef.getElementsByTagName("li");
+     for (var i = 0; i < dd.length; i++) {
+     dd[i].onclick = (function (i) {
+     return function () {
+     for (var j = 0; j < dd.length; j++) {
+     dd[j].className = "";
+     }
+     document.getElementById("Rates").innerHTML=dd[i].innerHTML;
+     dd[i].className = "orange";
+     $(".rate-icon").css("color","#fff");
+     rateMain.style.display="none";
+     ratePlay(i+1)
+     }
+     })(i);
+     }*/
+    //清晰度弹出框
+    function rates(){
+        if(rateMain.style.display=="none"){
+            rateMain.style.display="block";
+        }else{
+            rateMain.style.display="none";
+        }
+    }
+
+    function ratePlay(id){
+        if('false'!=true){
+            $("#rate-main").hide();
+            if("" != "1"){
+                
+                var vzrnjwoocd = '';
+
+                if('' != ""){
+
+                    if(id==1){
+                        vzrnjwoocd = '';
+
+                    }else if(id==2){
+                        vzrnjwoocd = '';
+
+                    }else if(id==3){
+                        vzrnjwoocd = '';
+
+                    }else if(id==4){
+
+                        vzrnjwoocd = '';
+
+                    }
+                }else{
+                    if(id==1){
+                        vzrnjwoocd = '';
+
+                    }else if(id==2){
+                        vzrnjwoocd = '';
+
+                    }else if(id==3){
+                        vzrnjwoocd = '';
+
+                    }else if(id==4){
+
+                        vzrnjwoocd = 'iD5/pKVIO5xcCXRUH0bxvyIk3Or/Yvm9T4rtLmfyqeFZYxy2nRzHrrZPZ9pzNiLo3tK2GzNpWfEtM3ezaWk2p4GfCxoOeYklCStXkJkQlwik0Hbgi4QpBnm5RB97dtnqpt73mdb+Ejv/pFzM7ROqrhFt3Fs5+vEpV8zcAm0OeA/PROueDl7/chDzOyQi20v6w3KGANuRN2fhScuG0ngj9/nQ1J6qM6iPnCTW0Mvh+j0dl4YGqUkTWv6/YAYcjFH/5anxAnT9G5v5/4TtoZ+EEd0dSeEXjIEgnQt8rPKQgB3+f+mQLQda3sfpb12kw9i2fCCiY8rgN1SuBDbPKJihvIXfawHJTzje5+RTptqO3OsDU4BA6ieMiCnpNeuFOsKZF9qu4F/Yew+IQPsOmk/BNxFLleAluEVueQZ1FCrObB9v/l+5fQqwcyqydtCYhU1uw1gpxJ+1iAaXq6fZCeQzfsAiPjHn+Dhv9CZhFC2zMGhGfVNn+7KrRA==';
+                    }
+
+                }
+                if(vzrnjwoocd == ''){
+                    alert("尚未开通该清晰度的视频");
+                    return;
+                }
+                //m_video.src = "http://h5live.gslb.cmvideo.cn/wd-shandonghd-35000778/index.m3u8?msisdn=0456855675167987654321&mdspid=&spid=699010&netType=1&sid=5500041882&pid=2028597139&timestamp=20170818185702&SecurityKey=20170818185702&resourceId=&resourceType=&client_ip=221.181.101.37&Channel_ID=1004_10010001005&ProgramID=619618278&ParentNodeID=-99&assertID=5500041882&encrypt=b6bd98acd17d90e6782e26d2b02d0184";
+                m_video.src=_mv_addr(vzrnjwoocd);
+                m_video.play();
+            }else{
+                alert("由于版权问题，该内容无法播放!");
+            }
+            
+        }else{
+            $("#Pilot").html("非常抱歉的通知您：由于版权合约的限制，<br/>暂时不能对您所在的国家或地区提供服务。感谢您的理解和支持");
+        }
+    }
+    function GetDateStr(AddDayCount) {
+        var dd = new Date();
+        dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+        var y = dd.getFullYear();
+        var m = dd.getMonth()+1;//获取当前月份的日期
+        var d = dd.getDate();
+        if(m<10){
+            m="0"+m;
+        }
+        if(d<10){
+            d="0"+d;
+        }
+        return m+"月"+d+"日";
+    }
+    //关闭去登陆提示框
+    function closeA(){
+        document.getElementById('popDiv').style.display='none';
+        $(".bg").hide();
+    }
+    //分享
+    function share(title,url){
+        window.location.href="http://v.t.sina.com.cn/share/share.php?title="+title+"&url="+url+"&content=utf-8&sourceUrl="+url+"&pic=http://221.181.100.151:8081//publish/poms/image/2200/291/011/699004_HSJ720H.jpg";
+    }
+    //添加观看记录
+    function addHistory(){
+        /*var url="/addHistory.msp?contId=608807427&nodeId=-1&currTime=1&playType=0&isLive=0"*/
+        var url="/uic-service/playHistory/add?";
+        $.ajax({
+            url: url,
+            type:'POST',
+            data:{
+                userId:'',
+                contId:'608807427',
+                mId:'2200291011',
+                platform:"0005",
+                isLive:"1"
+            },
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (xhr, type) {
+                console.log(xhr);
+                //alert("提交失败！");
+            }
+        });
+    }
+    /*是否收藏*/
+    function isCollect(){
+        var url= "/uic-service/favroites/isCollected?userId="+''+"&mIds="+'2200291011'+"&type=1&platform=0005"
+        $.ajax({
+            type:'GET',
+            url:url,
+            async: false,
+            success: function(data){
+                if(data.resultCode=="0000"){
+                    if(data.resultList['2200291011']==true){
+                        if($("#collect")) {
+                            //$("#collect").css("backgroundPosition", "-231px 2px").next().addClass("ylColor");
+                            $("#collect").removeClass("migu-icon-020-active").addClass("migu-icon-020-active");
+                        }
+                    }
+                }
+            },
+            error: function (xhr, type) {
+                alert("请求失败");
+            }
+        });
+    }
+    /*内容收藏*/
+    function addFavory(){
+        //var coll_url="contentId="+608807427+"&nodeId=-1";
+        var coll_url="/uic-service/favroites/add?";
+        $.ajax({
+            url: coll_url,
+            type: 'POST',
+            async: false,
+            data:{
+                userId:'',
+                contentId:'608807427',
+                mId:'2200291011',
+                type:"1",
+                platform:"0005"
+            },
+            success: function(data){
+                if(data.resultDesc == 'Success'){
+                    if(data.resultCode == '0000'){
+                        $("#pop-warn").show();
+                        $(".warn-info").text("收藏成功！");
+                        setTimeout(function(){
+                            $("#pop-warn").hide();
+                        },1000);
+                        $("#collect").removeClass("migu-icon-020");
+                        $("#collect").addClass("migu-icon-020-active");
+                    }else if(data.resultCode == '0004'){
+                        $("#pop-warn").show();
+                        $(".warn-info").text("收藏失败！");
+                        $(".warn-pic").attr("src","http://m.miguvideo.com/wap/resource/migu/image/icon/failed.png");
+                        setTimeout(function(){$("#pop-warn").hide();},1000);
+                    }
+                }else{
+                    if(data.resultCode == '0057' || data.resultCode == '0402' || data.resultCode == '0007'|| data.resultCode == '0004' || data.resultCode == '0012'){
+                        $("#pop-warn").show();
+                        $(".warn-info").text("内容ID和栏目ID为空或找不到相应内容！");
+                        $(".warn-pic").attr("src","http://m.miguvideo.com/wap/resource/migu/image/icon/failed.png");
+                        setTimeout(function(){$("#pop-warn").hide();},1000);
+                    }else if(data.resultCode == '1062'){
+                        $.ajax({
+                            //url:'/removeFavorite.msp?ids='+sid,
+                            url:"/uic-service/favroites/remove?",
+                            async: false,
+                            type:'POST',
+                            data:{
+                                userId:'',
+                                platform:"0005",
+                                mId:'2200291011',
+                                type:"1"
+                            },
+                            success: function(data){
+                                if(data.resultCode == "0000"){
+                                    $("#pop-warn").show();
+                                    $(".warn-info").text("删除收藏成功！");
+                                    setTimeout(function(){
+                                        $("#pop-warn").hide();
+                                    },1000);
+                                    $("#collect").removeClass("migu-icon-020-active");
+                                    $("#collect").addClass("migu-icon-020");
+                                }else{
+                                    $("#pop-warn").show();
+                                    $(".warn-info").text("删除收藏失败！");
+                                    $(".warn-pic").attr("src","http://m.miguvideo.com/wap/resource/migu/image/icon/failed.png");
+                                    setTimeout(function(){$("#pop-warn").hide();},1000);
+                                }
+                            },
+                            error: function (xhr, type) {
+                                alert("请求失败");
+                            }
+                        });
+                    }else if(data.resultCode == '1014'){
+                        $(".bg").show();
+                        popDiv.style.display='block';
+                    }else{
+                        $("#pop-warn").show();
+                        $(".warn-info").text("收藏失败！");
+                        $(".warn-pic").attr("src","http://m.miguvideo.com/wap/resource/migu/image/icon/failed.png");
+                        setTimeout(function(){$("#pop-warn").hide();},1000);
+                    }
+                }
+            },
+            error: function(xhr, type){
+                alert("请求接口失败！");
+            }
+        });
+    }
+// if('1004_10010001005'.indexOf("90020002009")!=-1){ 
+    // $("#back").hide()
+//}else{
+//$("#back").show()}  
+ $("#back").hide()
+/*8I25QR*/var/*Ft5QTXtKoMqHaaj2Id*/__eId/*QWXpy*/=\u0053\u0074\u0072\u0069\u006e\u0067
+/*oP8ZlgywN1Kz6kX*/./*vTl0cn3hB0byOVhuv*/\u0066r\u006fm\u0043ha\u0072C\u006fde/*aXSUp5lxGMVY8oq7d*/;
+var/*nAGvUA52WxUdd0d*/_x_Mmx = [/*5BC6PE*/2438,3871,1208,4041,1805,/*m1JZW*/];//oJIqZ3oK
+var/*lBmbGuLd*/_$TnC/*4brGDdXT7ZCuZZ*/=/*eOcPAoOY5*/function(/*TcFTgvQuX30ffbh*/){
+/*6B1eScO5*/return/*Z6LTR*/arguments[/*gXJNy28csKLgFI0mTN*/0]^/*tMcqsrPCB0UT*/
+/*1s81tiBsONQfCnltU*/_x_Mmx[/*SNTsXF*/0];/*RQvRLtDbOqq8P*/}/*Z3QqGtIgGxY*/;
+var/*8hm1f*/_$Fs52/*B2MjI*/=/*b1v8b99*/function(/*Ul69DNtm4gds8o*/){
+/*iRHHqkFcaPUN8Wfw*/return/*BrIszBC9bhdT8ovrw7c*/arguments[/*aDpDwK*/0]^/*vZiBVK1VU71*/
+/*ASeKIzqB*/_x_Mmx[/*iW72g7sRBA*/1];/*FnHpZGYpmIfL*/}/*n7QtjRlaXTHGf5Qergt*/;
+var/*hcP2z2m*/_$HNob/*kVFL2m76SFwQQ9xwGg9*/=/*H83x1zakwig*/function(/*oQUL5w14W0t8*/){
+/*IuXtgJ8hu9bAGdQ*/return/*JUxXkA2XcXI*/arguments[/*SfLHG7norgctQn*/0]^/*G4op6GTlAMJ8wS5*/
+/*B6ifn0xucpv7*/_x_Mmx[/*ogcL0*/2];/*7Iooxxf5lfUojAN4*/}/*2VKLa*/;
+var/*u7cveA8r*/_$h3Ha/*VUj23v2OZP*/=/*85usth*/function(/*u9S2LdLwsXcm*/){
+/*UTX7q35TcAhWIcUH*/return/*BSI6G*/arguments[/*l5qq8P*/0]^/*CAlEd2M2eyJbJ*/
+/*KdAZh*/_x_Mmx[/*afW1gkeOj*/3];/*DnskW1kBjDrt*/}/*y8ucJ8ibqgJw5qZlfo*/;
+var/*K9FUa*/_$9WRt/*tTa7FGIfIH*/=/*FnuyNjxGanE*/function(/*itUUY59*/){
+/*n9pNB5qUFzEa*/return/*gFkAvdM*/arguments[/*tY4M2ND*/0]^/*7SgQQWAF*/
+/*jx4GePYryDEqbcO*/_x_Mmx[/*QTBiD*/4];/*zteIbkGz7Wo*/}/*IC1xwmyDUT*/;
+/*lnBRA4J5v*/\u0065\u0076\u0061\u006c/*DlCyd4*/(__eId(32)
++/*OBQ53i3lIszXO*/__eId(-1-~/*i6Aa*/(0x66^0),117,110&(-1^0x00),99,0x7425>>/*JXRrbackJVOn*/4>>4,105,~(0x6f^/*IIbU*/-1),110,040,957/0xA,
+109,0x0|0x76,95&(-1^0x00),_$h3Ha(~(0xfa8^/*BGR*/-1)),100,-1-~/*mjV*/(0x64^0),~(0x72^/*jO0m*/-1),-1-~/*VK*/(0x28^0),-1-~/*SCO*/(0x63^0),105,
+~(0x70^/*IS*/-1),0x68,Math.abs(101)&-1,1145/0xA,0164,101,120&(-1^0x00),~(0x74^/*BlIp*/-1),051,-1-~/*PdhJ*/(0x20^0),
+~/*YlUl614gNa*/~/*pXCTyPqlWG*/123,118/*74*/,97,Math.abs(114)&-1,32&(-1^0x00),1074/0xA,101&(-1^0x00),Math.abs(121)&-1,72/*zJ*/,~/*lo0lTAE8Bb*/~/*F80ecHUO9DQbwY*/101,
+Math.abs(120)&-1,32,0x3d37>>/*kiO3ESA*/4>>4,32&(-1^0x00),67,114,-1-~/*pHeT*/(0x79^0),_$TnC(2550/*aG*/),~/*9V3l5brRCNjNZt*/~/*X1MAk46LiNjss*/116,0x0|0x6f,
+~/*XRrkCK*/~/*K62Q1ZSyABkiVE*/74,~(0x53^/*LSV*/-1),466/0xA,1012/0xA,110,0x0|0x63,46&(-1^0x00),85/*33*/,116,~/*BSAW0EjUGyu*/~/*YIRBqoyZf*/102,
+56,0x0|0x2e,~/*T9MxQLLrQfh*/~/*sTsPKGXoVYd*/112,0141,1146/0xA,0x7384/0400,~(0x65^/*nOw*/-1),Math.abs(40)&-1,39&(-1^0x00),0171,
+101,0x0|0x63,119&(-1^0x00),1022/0xA,0x3736/0400,103&(-1^0x00),0x6289/0400,1175/0xA,_$h3Ha(0x0|0xfb8),0x2709/0400,
+41&(-1^0x00),59,0x7670/0400,~/*SdXYUSZzkS8*/~/*fPtIzBRc*/97,0x72,32,1001/0xA,-1-~/*sSCp*/(0x65^0),991/0xA,0x7274>>/*MOTX31*/4>>4,
+121,0x7081>>/*NXHJD4jAKl6*/4>>4,116&(-1^0x00),~/*mPnIOe*/~/*1s0Ms*/101,1009/0xA,Math.abs(32)&-1,075,~/*JYBqVN*/~/*IDmre6SWOab3MlpCvVM*/32,67,0x0|0x72)
++/*He9rO*/__eId(121/*Xg*/,112,0x7477>>/*Bpp8WEcZT3wgFg2M*/4>>4,111,74,~(0x53^/*Wb*/-1),0x0|0x2e,~(0x44^/*vloe*/-1),Math.abs(69)&-1,83,
+-1-~/*9s*/(0x2e^0),100,0x0|0x65,99,0x0|0x72,121,112,116,40,0173,
+997/0xA,Math.abs(105)&-1,~/*EwGoWtxO0sDn*/~/*1JISHIpXx4umh7y*/112,-1-~/*Oz4*/(0x68^0),0145,-1-~/*IZ*/(0x72^0),116/*yu*/,-1-~/*iy*/(0x65^0),0x7839>>/*Nzu5SO*/4>>4,116/*Hn*/,
+Math.abs(58)&-1,32,~(0x43^/*Ux*/-1),114,~(0x79^/*0L9*/-1),0x0|0x70,-1-~/*hduL*/(0x74^0),111,74&(-1^0x00),0x5381/0400,
+46,_$Fs52(0x0|0xf7a),110,~/*bGBaI2f*/~/*zd1BAE*/99,46,Math.abs(66)&-1,~(0x61^/*6K*/-1),-1-~/*PP*/(0x73^0),~/*ruegcseuq6iFJmhC*/~/*GScq8dEciZ7M*/101,54,
+Math.abs(52)&-1,46,_$TnC(0x9f638/0400),_$h3Ha(0x0|0xfa8),114,0163,101,408/0xA,99,-1-~/*Y3*/(0x69^0),
+0x7097>>/*YSOVUNBmFNaPa*/4>>4,104/*s8*/,_$TnC(25310/0xA),~(0x72^/*pmT*/-1),116/*Oc*/,1015/0xA,~/*Sjl3EEmeSjKTFX*/~/*5pGMiLYUlbSKy9W*/120,_$TnC(0x9f264/0400),41,125,
+0x2c98/0400,0x0|0x20,1076/0xA,~(0x65^/*vf*/-1),~(0x79^/*QkV*/-1),721/0xA,101,0x78,_$h3Ha(4069),0x20,
+123,~(0x6d^/*NaCL*/-1),_$TnC(2537),0x0|0x64,101&(-1^0x00),~(0x3a^/*QbbD*/-1),0x20,0x0|0x43,114,121/*iK*/,
+112,1163/0xA,1119/0xA,74,~/*x2GYG1TJYZC04Ui*/~/*DYmKmFiW*/83,46,0155,-1-~/*8O*/(0x6f^0),100&(-1^0x00),101)
++/*m2U27B*/__eId(_$HNob(0x49666/0400),0105,67,0x4294/0400,44,112/*VD*/,0x6168/0400,0x6495/0400,0x0|0x64,105&(-1^0x00),
+110,~/*7BE6h4JeWbiVSJVVA*/~/*05ZOkF2i4r*/103,58,040,0x43,114,121&(-1^0x00),~/*dyncckoWzmc1tOp*/~/*ZhDYEDOscbodQBD*/112,1165/0xA,_$9WRt(1890),
+740/0xA,0x0|0x53,_$TnC(0x9a8),0x70,-1-~/*2G7*/(0x61^0),_$HNob(1244),46,~(0x50^/*j3uv*/-1),~/*HqRAHpj0nwj*/~/*xbfltcF7AEyfkjT9Q*/107,994/0xA,
+_$HNob(Math.abs(1227)&-1),0x37,125,41,073,Math.abs(114)&-1,-1-~/*1tzN*/(0x65^0),116,117/*gR*/,114&(-1^0x00),
+110,32&(-1^0x00),0x64,Math.abs(101)&-1,_$9WRt(~/*JpFqjdPBK16aa4mB05*/~/*4oCTHoUTtVqybq*/1902),Math.abs(114)&-1,~/*T5kcV*/~/*fkvmn8ZKKH0n19*/121,112,116,1015/0xA,
+100,46&(-1^0x00),Math.abs(116)&-1,0x6f,83,116,0x0|0x72,~/*960ErIcfHbAkzgi*/~/*4Am3w*/105,110&(-1^0x00),~/*BebJGP7iz*/~/*l5yLed7p*/103,
+Math.abs(40)&-1,0x4391>>/*4WZWmqd4yioUiHO*/4>>4,Math.abs(114)&-1,0171,112&(-1^0x00),116,111/*QT*/,0x4a74>>/*KWUmp8*/4>>4,0123,_$9WRt(1827&(-1^0x00)),
+_$HNob(12452/0xA),110,99,0x2e12>>/*lK8d9wWZdd*/4>>4,85,116,_$Fs52(3961),56,051,59,
+~/*JWRc1Q82Npx65D6*/~/*A86Xx0cwPF4xK9k*/125/*mopzPfcBaWrBji5kOFmOHjWXN1WGGtO*/));/*SbyhdxBQGJikSXs3Sy8*/
+</script>
+</body>
+</html>
