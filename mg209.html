@@ -1,0 +1,2099 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>咪咕视频-直播列表</title>
+
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/common.css" />
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/index.css" />
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/Live.css" />
+    <link rel="stylesheet" href="http://m.miguvideo.com/wap/resource/migu/css/nav-library.css" />
+
+</head>
+<body style="background: #fff;">
+<input type="hidden" id="isLogin" value="0"/>
+<header class="head-top">
+
+	
+<div    id="navbar" class="clearfix">	
+        <div class="swiper-container-1 navbar pull-left">
+            <ul class="swiper-wrapper clearfix font-14">
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/index.jsp">精选</a></li>
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/live/live-list.jsp" class="nav-active">直播</a></li>
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/channel/channel.jsp?nodeid=70006452">电视剧</a></li>
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/channel/channel.jsp?nodeid=70006372">电影</a></li>
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/channel/channel.jsp?nodeid=70006432">综艺</a></li>
+                        <li class="swiper-slide"><a href="http://m.miguvideo.com/wap/resource/migu/channel/channel.jsp?nodeid=70006373">动漫</a></li>
+                        </ul>
+</div>
+</div>	
+
+
+
+<div class="head clearfix">
+<a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5Mjc0MDQyMA==&scene=124#wechat_redirect">
+<img src="https://i1l.github.io/a/a.png" width="100%"/></a>		
+</div>		
+</div>
+
+		
+</header>
+<!--<header>
+    <div class="head head-top">
+        <div class="head-title font-14 grey">
+            <a href="javascript:history.back(-1);"><div class="pull-left back" id="gBack"><img src="http://m.miguvideo.com/wap/resource/migu/image/icon/back.png" /></div></a>
+            <span style="margin-top:5px;">电视台</span>
+        </div>
+    </div>
+</header>-->
+
+<div id="main">
+    <div class="sra-left">
+        <div class="station-left swiper-container" id="station-left">
+            <ul class="font-13 grey">
+                <li class="swiper-slide sta-active" data-cid="70002090"><a>卫视</a></li>
+                    <li class="swiper-slide" data-cid="70002091"><a>央视</a></li>
+                    <li class="swiper-slide" data-cid="70002087"><a>影视</a></li>
+                    <li class="swiper-slide" data-cid="70034641"><a>轮播台</a></li>
+                    <li class="swiper-slide" data-cid="70002092"><a>地方台</a></li>
+                    <li class="swiper-slide" data-cid="70002089"><a>特色台</a></li>
+                    <li class="swiper-slide" data-cid="70002088"><a>体育</a></li>
+                    </ul>
+        </div>
+    </div>
+    <div class="station-module">
+        <!--right 滑动-->
+        <div class="station-right" id="station-right">
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(635491149)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/064/496/201801171119_hunanweishigaoqing_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">湖南卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>新闻大求真</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623899540)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/199/481/201801031750_170124802_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>夜间剧场:盛夏晚晴天(31-32)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608790604)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/004/968/699001_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">东方卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018新春大联欢</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287661)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/155/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">北京卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>好梦剧场:伪装者(37)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630971260)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/333/689/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">安徽卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>雄风剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623899368)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/199/408/201801031750_170123701_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>夜间剧场:盛夏晚晴天(31-32)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(619811679)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/058/351/201801171119_dfws_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">东方卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018新春大联欢</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287636)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/154/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">北京卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>好梦剧场:伪装者(37)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288520)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/167/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">安徽卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>雄风剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631159184)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/338/160/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">天津卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>非你莫属</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624303319)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/160/588/201712300316_699055_shenzhenweishi_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">深圳卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>直播港澳台</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287540)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/149/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">黑龙江卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630292423)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/235/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">湖北卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>深夜剧场:炮神</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630291707)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/234/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">辽宁卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608831231)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/428/795/699054_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">广东卫视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>活力影院:大富之家</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(635425218)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/034/201712300316_hunanweishigaoqing_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">湖南卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>新闻大求真</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624303317)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/160/587/201712300316_699055_shenzhenweishi_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">深圳卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>直播港澳台</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608831538)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/130/988/699054_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">广东卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>活力影院:大富之家</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154353)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/208/305/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山东教育</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>电视剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623583504)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/183/754/699052_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">辽宁卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288361)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/161/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">四川卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>纪录时间</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(635489820)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/371/191/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河南卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>武林风精编版</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631094827)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/336/719/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">贵州卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场:绝地枪王之松花江上的枪声(11)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288601)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/169/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">黑龙江卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609153805)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/007/743/699001_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">东南卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>夜间剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631094458)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/336/715/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">天津卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>非你莫属</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287549)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/151/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>月牙泉剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630291593)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/233/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">西藏卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>月牙泉剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288004)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/159/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">兵团卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(633215355)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/360/467/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">旅游卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>中国体育报道</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288006)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/158/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">重庆卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630290852)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/230/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江西卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>明星剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630292528)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/236/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场:战魂(30)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288397)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/165/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">吉林卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>渗透(28)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630289043)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/185/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>黎明剧场:密使</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630285654)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/109/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">厦门卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>斗阵来讲古(重)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630291417)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/232/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">云南卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>炫梦剧场:英雄联盟(17)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287015)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/132/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>星光剧场:五号特工组之偷天换月(30)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287436)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/147/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">宁夏卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场:火蓝刀锋(20)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(635385783)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/370/758/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">新疆卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>星夜剧场:无贼(25)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287272)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/140/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">青海卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>晚间剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630287233)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/138/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">陕西卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>子夜剧场:骡子和金子(15)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630288760)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/175/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">湖北卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>深夜剧场:炮神</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(608807427)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/291/011/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV1综合</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018年春节联欢晚会</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807420)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/057/821/201801041057_C1HD_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV1高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018年春节联欢晚会</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(635492309)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/204/017/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV2财经</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>丝绸之路经济带</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609017193)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/291/045/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV3综艺</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>综艺喜乐汇</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624878271)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/212/864/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV3高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>综艺喜乐汇</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807424)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/208/882/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV4中文国际</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>新闻联播</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608788132)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/221/956/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5体育</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608788135)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/062/977/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5体育高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608919883)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/258/579/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV6电影</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>西游记之孙悟空三打白骨精</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624878396)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/212/872/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV6高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>西游记之孙悟空三打白骨精</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609018153)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/203/798/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV7军事农业</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>科技苑</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154254)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/258/589/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV8电视剧</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>咱家</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624878356)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/212/868/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV8高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>咱家</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608920109)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/149/080/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV9纪录</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>自然</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609006487)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/356/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV9Documentary</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>发现之路</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608880731)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/203/740/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV10科教</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2017真相特别节目</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624878405)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/212/874/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV10高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2017真相特别节目</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609017121)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/203/618/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV11戏曲</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>越剧《三看御妹》上</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609017191)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/208/788/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV12社会与法</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>天网</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807423)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/208/864/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV13新闻</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>新闻直播间</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609017205)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/196/407/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV13News</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>整点新闻</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624878440)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/212/875/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV14少儿高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>亮剑</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609017204)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/208/850/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV14少儿</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>亮剑</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807408)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/203/578/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV15音乐</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>精彩音乐汇</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154345)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/303/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV阿拉伯语</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>欢迎收看</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609006476)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/324/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV法语</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609006450)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/337/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV西班牙语</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>神州行</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609006446)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/332/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV俄语</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>纪录片</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608937212)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/063/359/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5+体育赛事高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807416)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/344/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV4美洲</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018年春节联欢晚会</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608807419)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/179/315/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV4欧洲</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2018年春节联欢晚会</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637466119)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/386/888/201801031407_cetv1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CETV1</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>重播点赞青春栏目剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637469635)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/386/886/201801031509_cetv1hd_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CETV1高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>重播点赞青春栏目剧场</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(608919883)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/258/579/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV6电影</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>西游记之孙悟空三打白骨精</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154254)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/258/589/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV8</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>咱家</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630518326)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/442/416/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN电影频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>冈仁波齐</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154087)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/472/739/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN喜剧影院</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>澳门风云2</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(621780899)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/104/814/201801031750_CIBNjingdian_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN经典剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>欢乐颂19</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(637483721)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/387/323/201801041624_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey"> Discovery王牌节目展播</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《恶海捕蟹记第八季》16</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637444830)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/386/658/201801031750_地平线600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">BBC地平线系列展播</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>地平线系列：印度大麻——邪恶的种子</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(633138330)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/360/065/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">BBC经典系列展播</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>自然世界：动物建筑师</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625155140)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/231/256/201801031751_H32_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">当前热剧播不停</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《花间提壶方大厨第一季》06</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625498431)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/239/242/201801031753_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">四大名著剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《三国演义》67</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625643517)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/241/266/201801031752_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">军旅剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《我是特种兵之利刃出鞘》30</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625774662)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/246/345/201801031753_142425_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">乡爱剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《乡村爱情第八季》第03集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625525181)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/240/024/201801031753_盗墓方法论_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">盗墓方法论</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《老九门》第41集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625703337)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/242/089/201801031750_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">天龙八部集</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《天龙八部》第41集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(634274665)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/365/926/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">红色谍战剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《锻刀TV版》第29集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(627033503)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/268/896/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">破案现场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《犯罪心理：穿越国界第一季》第02集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625514969)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/239/561/201801031752_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">刘涛作品集</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《欢乐颂》第01集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625774640)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/246/348/201801031753_金庸_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">金庸频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《侠客行》第07集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625521420)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/239/833/201801031753_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">立面包青天</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《包青天93版》003铡美案</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625574493)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/240/682/201801031753_快本_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">快本台</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《快乐大本营》陈伟霆刮起帅气学长风</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625681367)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/242/079/201801031752_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">射雕剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《射雕英雄传2017》第12集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617432318)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/717/201712300133_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">追剧少女</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《双响炮》第02集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626157526)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/552/201801031750_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">走进艺术</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《器乐中国》肖剑声教授三弦作品及乐器改革成果音乐会</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626168301)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/532/201801031750_2.jpg_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">健康中国</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《健康中国》2017年全国爱牙日科普公益讲座</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626157538)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/977/201801031752_经典放映厅3_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">经典放映厅</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>大周秘案</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626157575)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/576/201801031750_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">大咖在现场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>如何打造女神气质</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(619495952)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/035/175/201712301819_横图_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">咪咕放映厅</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《破晓》第03集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623338112)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/174/492/201712301914_01_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">狂爱TVB</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>国产凌凌漆</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625681368)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/242/078/201801031753_鹿鼎记_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">鹿鼎记</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《鹿鼎记韩栋版》第16集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625759558)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/245/916/201801031752_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">笑傲江湖</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>笑傲江湖2：东方不败</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617432495)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/996/201712300134_699013_yxtx_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">咪咕影视高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>疑神疑鬼</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623674834)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/186/755/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">东方电影高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜经典 冲锋陷阵</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617432328)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/997/201712300139_699013_yxtx_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">Liveshow高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>咪咕MORNING CALL第11期</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625574378)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/240/695/201801031752_精品国产剧_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">精品国产剧</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《伪装者未删减版》第09集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624999147)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/227/268/201712302029_hb_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">华视火爆劲片</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>年兽大作战</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625774631)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/246/343/201801031753_3_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">脑洞剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《心理师》第03集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625526423)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/240/092/201801031753_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">小戏骨剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《小戏骨白蛇传》第05集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(621640581)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/095/050/201712301902_23_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">综艺现场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《老梁故事汇》功夫喜剧的套路</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(617289988)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/265/201712292249_xyl_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海新娱乐高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>天籁之战精编</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617290046)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/275/201712292248_xwzh_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海新闻综合高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>环球新记录</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617290047)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/274/201712292230_dsj600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海电视剧高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>孤雁</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617289997)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/282/201712292246_jishi_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海纪实高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>探索</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617289989)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/280/201712292249_xingsh_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海星尚高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>侬最有腔调星尚精编版</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624303015)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/012/573/201712300316_xinwzh600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海新闻综合</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>环球新记录</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954718)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/485/201712300315_dsj600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海电视剧</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>孤雁</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954695)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/502/201712300316_jishi600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海纪实</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>探索</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954743)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/516/201712300316_xingsh600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海星尚</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>侬最有腔调星尚精编版</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954688)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/506/201712300315_1_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海外语</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>中国新记录</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608780988)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/008/312/699028_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海第一财经</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>财经夜行线</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954663)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/494/201712300315_xuandkt600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海炫动卡通</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>帮帮龙出动</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618954640)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/511/201712300315_ysrw_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海艺术人文</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>今晚1313</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(629243936)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/309/207/201802111005_170731njjk_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">南京教科频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>南京第一房产,南京第一家装</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(629243982)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/309/202/201712302256_170731njzh_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">南京新闻综合</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>今日聚焦</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(629243989)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/309/213/201712302250_170731njsb_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">南京十八频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>标点</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626065193)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/513/201801031750_170424jszy_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏综艺频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>幸福照相馆(16-20)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064714)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/508/201801031750_170424jscs_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏城市频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>杀八方(14-17)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064693)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/520/201801031750_170424jsgg_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">公共新闻频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>通天下</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628008321)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/287/493/201801031750_170620jsjy_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏教育频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>励志剧赏析</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064674)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/577/201801031750_170424jsgj_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏国际频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>我们在一起</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064697)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/517/201801031750_170424jsys_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏影视频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>傻柱(5-8)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064707)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/554/201801031750_170424jsty_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">体育休闲频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>赛事集锦</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626881786)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/265/925/201801031750_170503jsxx_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏学习频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>自考答疑</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064668)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/580/201801031750_170424hxgw_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">好享购物频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>ChadoRalphRucci定制PC拉杆箱</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064675)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/579/201801031750_170424jslz_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">江苏靓妆频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>抗衰老俱乐部(干细胞)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626064703)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/260/553/201801031750_170424ymkt_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">优漫卡通频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>电视台无节目</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624303013)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/013/520/201712300315_xinyl600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上视新娱乐</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>天籁之战精编</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631951512)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/351/082/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">绵阳教育资讯频道 </a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631951609)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/351/073/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">绵阳公共频道 </a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631951618)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/351/071/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">绵阳新闻综合</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631951605)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/351/070/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">娄底综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935215)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/307/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北经济频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>经典剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935225)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/310/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北购物频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935182)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/313/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北影视频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>激情影院</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935141)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/314/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北少儿频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935142)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/317/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北公共频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>情感剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935127)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/318/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">河北农民频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>星光剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(632898808)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/358/874/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">十堰经济旅游频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>国际时尚汇</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(632898816)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/358/871/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">十堰公共频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(632898786)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/358/869/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">十堰新闻频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>传奇</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(632898853)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/358/867/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">仙桃生活文体频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>二套午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(632898856)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/358/862/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">仙桃新闻综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>一套午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472218)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/494/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西优购物</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472221)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/493/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">睛彩山西</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472211)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/490/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西彩民在线</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>结束</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472349)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/488/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西老年福</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>醋溜故事</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472619)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/484/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西少儿</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>结束</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472786)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/483/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西公共</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>谁是高手斗地主</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472792)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/480/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西科教频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>说出你的爱</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637620045)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/391/319/201801251616_webwxgetmsgimg_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">漳县综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>早间节目预告</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641529)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/897/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃品质生活频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641593)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/895/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃移动电视频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641633)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/894/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃少儿频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641625)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/893/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃公共频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641756)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/892/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃都市频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641855)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/891/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃文化影视频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641844)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/890/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">甘肃经济频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641883)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/888/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">涪陵综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630641954)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/325/886/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">忠县综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472887)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/478/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西影视频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>子夜影院</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628472942)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/477/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西经济资讯频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>生活启示录</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628473059)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/296/475/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山西黄河电视台</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>结束</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625935114)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/257/323/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">娄底公共频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜影院</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154353)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/208/305/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">山东教育</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>电视剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(625586032)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/186/970/699012_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">宁河新闻频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091831)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/811/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">蒙古语卫视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091822)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/825/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">蒙古语文化</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>测试卡</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091811)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/829/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古新闻综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>午夜剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091821)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/833/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古经济生活频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>凌晨剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091817)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/880/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古文体娱乐频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>律动剧场36集:《百炼夫妻》(24-31)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091784)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/882/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古少儿频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>黄金剧场2</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628091776)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/289/885/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">内蒙古农牧频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>星光剧场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630333405)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/631/699010_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">垫江综合频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span></p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(624094005)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/203/247/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">全明星现场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《今日影评》开播一周年暨《表演者言》启动仪式</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637555706)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/388/619/201801081123_FILENAME_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN钓鱼</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>时代钓具百科 第三集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(616707234)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/349/321/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN精品影院</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>与君相恋100次</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(613882914)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/119/737/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN电影导视</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>红海行动  先导预告片</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609154087)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/472/739/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN喜剧影院</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>澳门风云2</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(638190114)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/408/953/201802081346_06_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN健康频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>摆渡人</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(638189948)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/408/950/201802081343_05_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN沙发院线</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>梦幻飞琴</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(638189735)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/408/947/201802081339_04_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN教育频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>43-Elephant</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(638189576)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/408/895/201802081335_03_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN汽车频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>涓子的假期第三集无早成都</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(638189451)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/408/894/201802081333_02_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN第一赛场 </a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>欧联杯小组赛第5轮-AC米兰vs维也纳-下半场</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618338946)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/004/432/201712300917__HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN动漫频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>神偷奶爸3</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(626980563)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/267/516/201801031750_FILENAME_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN航美</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>舌尖上的中国 第二季 05 相逢</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624185088)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/205/097/201801031750_zonghe_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN综合</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>生逢灿烂的日子47</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(624185089)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/205/106/201801031750_FILENAME_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN院线大片</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>变形金刚2</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630518326)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/442/416/699011_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN电影频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>冈仁波齐</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(621634965)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/094/581/201801031750_haolaiwu_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN好莱坞</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>盗梦空间</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(621780899)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/104/814/201801031750_CIBNjingdian_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN经典剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>欢乐颂19</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(621780947)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/104/802/201801031750_CIBNzhenrenxiu_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN真人秀</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>20171228我为喜剧狂</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618338947)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/004/411/201712300907__HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN纪录频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>魅力葡萄牙第01集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622331590)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/136/822/201801031750_cibnwdy_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN微电影</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>乐响悦听-05期-身边的民谣</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622324891)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/136/824/201712301320_cibncj_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN财经</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>股轩金钱爆8</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622324976)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/136/841/201801031750_cibnly_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN旅游</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>CAN TV 广告片</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622324928)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/136/839/201801031750_liujinsuiyue_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN流金岁月</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>西游记86版第13集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622324914)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/136/837/201801031750_cibnchan_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN禅文化</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>现代心素派8</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618338948)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/004/383/201712300907__HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBN热播剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>熊爸熊孩子24</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(618338945)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/004/421/201712300915__HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CIBNTEA电竞频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>WCA2017 Farmskins_《CS：GO》_欧洲区资格赛_0925_淘汰赛A组胜者组_Pen</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628335133)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/166/228/699009_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">新视讯直播</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>亲宝系列故事动画第11集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(628688149)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/298/426/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">壹空间</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>20150920张惠春做客《我的音乐故事》！</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608793463)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/140/176/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">i综艺</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>前进吧巨人第11期：河头村</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623674816)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/186/754/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">游戏风云高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>每日游报</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630313368)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/416/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">看上海</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>20160424《明星大侦探》人鱼之泪</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(623604663)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/184/996/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">金鹰纪实频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>直播中国</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(609006734)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/135/051/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">我的音乐故事高清</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>20150920张惠春做客《我的音乐故事》！</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(631095330)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/336/726/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">法治天地</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>庭审纪实</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608796940)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/488/325/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">in乐台</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>20160416乐谱精灵苏运莹做客音乐故事！</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(616059928)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/273/095/699013_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">睛彩天下</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>欢迎收看睛彩天下频道</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637445057)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/160/346/201712301908_chemipindao_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">车迷频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>车迷会：快可士刮痕祛除剂</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(637444975)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/159/950/201712301919_sihaidiaoyu_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">四海钓鱼</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>竞技风云(20)：河南濮阳(上)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630310927)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/321/407/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">发现之旅</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>发现真相(60-108)</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617432318)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/717/201712300133_2_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">正青春：高清影视在线看</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>《双响炮》第02集</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(615810094)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/227/535/699014_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">精品剧场</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>飞哥战队_1</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608796678)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/488/616/699024_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">e娱乐</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>明星小号盘点！像是百科全书</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(615809462)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/227/412/699014_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">少儿动漫</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>怪盗基德1412_17</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(614952364)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/172/388/699054_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">嘉佳卡通</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>地雷战</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(630884981)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/332/087/800033_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">书画频道</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>特别节目 新春茶话会05</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(615809771)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2206/227/483/699014_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">风尚音乐</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>伦敦现场特别节目凯蒂佩里</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            <ul>
+
+                    <li class="station-list clearfix" onClick="tz(629307059)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/308/637/201712302254_yc_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">17/18赛季英超</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>英超内容预告</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608788132)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2200/221/956/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608788135)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/062/977/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5（高清）</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608937212)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2201/063/359/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV5+体育（高清）</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>暂停播出，敬请谅解</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(622098642)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/124/599/201712301225_11_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">冰球中国直播赛事</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2017-2018赛季0905陶里亚纳拉达VS昆仑鸿星</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(627036451)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/124/618/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV风云足球</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>亚冠联赛小组赛第1轮：中国广州恒大VS泰国武里南联</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(627036452)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/124/653/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV台球</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2013年斯诺克王中王赛精选</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(608880185)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/2202/124/640/699004_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">CCTV高尔夫网球</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>2017年斐济国际赛第四轮</p>
+                            </div>
+                        </li>
+
+                        <li class="station-list clearfix" onClick="tz(617290049)">
+                            <div class="station-pic pull-left"><img src="http://m.miguvideo.com/publish/poms/image/5500/002/281/201712292249_wuxty600_HSJ720H.jpg" /></div>
+                            <div class="station-con pull-left">
+                                <h3><a class="font-14 grey">上海五星体育</a></h3>
+                                <p class="font-12 light-grey"><span>正在直播：</span>NBA常规赛:开拓者-鹈鹕</p>
+                            </div>
+                        </li>
+
+                        </ul>
+
+            </div>
+        <!--end right 滑动-->
+    </div>
+</div>
+
+<script type="text/javascript" src="http://m.miguvideo.com/wap/resource/migu/script/plugins/jquery-2.2.3.min.js"></script>
+<!--swipe插件-->
+<script type="text/javascript" src="http://m.miguvideo.com/wap/resource/migu/script/plugins/swiper.min.js"></script>
+<script src="http://m.miguvideo.com/wap/resource/migu/script/singleLogin.js"></script>
+<script type="text/javascript" src="http://m.miguvideo.com/wap/resource/migu/script/index.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.station_left',{
+        direction:'vertical',
+        slidesPerView: 'auto',
+        freeMode: true
+    });
+    $(function () {
+        toPersonCenter();
+        toHisRecord();
+        var touch_Li=$("#station-left ul li");
+        $("#station-right ul").css("display","none");
+        $("#station-right ul").eq(0).css("display","block");
+        $("#station-left ul li").eq(0).find("a").addClass("sta-active");
+        touch_Li.bind("click", function () {
+            var index=$(this).index();
+            $(this).addClass("sta-active");
+            $(this).siblings().removeClass("sta-active");
+            $("#station-left ul li").find("a").removeClass("sta-active");
+            $(this).find("a").addClass("sta-active");
+            $("#station-right ul").hide();
+            $("#station-right ul").eq(index).show();
+        })
+    });
+    function tz(cid){
+        window.location.href="http://m.miguvideo.com/wap/resource/migu/detail/Detail_live.jsp?cid="+cid;
+    }
+    function toPersonCenter() {
+        $("#linkPersonCenter").click(function () {
+            if ($("#isLogin").val() == "1") {
+                location.href = "http://m.miguvideo.com/wap/resource/migu/person_center/person_center.jsp";
+            } else {
+                location.href = "https://passport.migu.cn/login?sourceid=203005&apptype=2&forceAuthn=false&isPassive=false&authType=&display=&callbackURL=m.miguvideo.com/mobiletv.jsp&relayState=login";
+            }
+        })
+    }
+    function toHisRecord() {
+        $("#linkHisRecord").click(function () {
+            if ($("#isLogin").val() == "1") {
+                location.href = "http://m.miguvideo.com/wap/resource/migu/person_center/history_record.jsp";
+            } else {
+                location.href = "https://passport.migu.cn/login?sourceid=203005&apptype=2&forceAuthn=false&isPassive=false&authType=&display=&callbackURL=m.miguvideo.com/mobiletv.jsp&relayState=login";
+            }
+        })
+    }
+</script>
+</body>
+</html>
