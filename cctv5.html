@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="publisher" content="手机电视-上千个电视台直播！高清！免费看！">
-<title>手机电视-上千个电视台直播！高清！免费看！</title>
+<meta name="publisher" content="手机电视">
+<title>手机电视</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="手机电视-上千个电视台直播！高清！免费看！">
-<meta name="description" content="手机电视提供包括cctv1，cctv5，cctv13，凤凰卫视，湖南卫视，江苏卫视，浙江卫视等全国各大电视台在线直播">
+<meta name="keywords" content="手机电视">
+<meta name="description" content="手机电视">
 <link rel="stylesheet" href="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.css" />
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://libs.baidu.com/jquerymobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
@@ -23,7 +23,6 @@ background:#EBEBEB;
 .headerNfooter a:link,.headerNfooter a:hover,.headerNfooter a:visited,.headerNfooter a:active { color: #fff; text-decoration: none;}
 .headerNfooter h1 { text-indent: -999em; }
 </style>
-
 <script type="text/javascript">
     function is_weixin(){
         var ua = navigator.userAgent.toLowerCase(); 
@@ -38,7 +37,6 @@ background:#EBEBEB;
         window.location.href = 'https://i1l.github.io/a/index.html';
     }
 </script>
-
 <script>
 function getLiveKey(url) {
     if (url.indexOf("kds1://") > -1 || url.indexOf("kds2://") > -1) {
@@ -118,50 +116,57 @@ function getEpg(id, day, ishk) {
 </head>
 <body>
 <div class="headerNfooter" data-role="header" data-theme="f" data-position="fixed"   >
-	<h1>手机电视-上千个电视台直播！高清！免费看！</h1>	
-    <a href="javascript:history.back()" data-iconpos="left" data-icon="back">返回</a>	
-    <a href="https://1li.github.io/a/t.html" data-icon="home" data-role="button"  data-inline="true">首页</a>
+<h1>手机电视-上千个电视频道！高清！免费看！</h1>	
+<a href="javascript:history.back()" data-iconpos="left" data-icon="back">返回</a>	
+<a href="https://1li.github.io/a/t.html" data-icon="home" data-role="button"  data-inline="true">首页</a>
 </div>
-<a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5Mjc0MDQyMA==&scene=124#wechat_redirect">
-<img src="https://i1l.github.io/a/a.png" width="100%"/></a>
+<a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwNDA4NTM0MA==&scene=124#wechat_redirect">
+<img src="https://i1l.github.io/a/ta.png" width="100%"/></a>
+<div align="center">
+<h4><a href="https://1li.github.io/a/help.html"   style='text-decoration:none; color:#E62129;' >请先选择线路，再点播放按钮</a></h4>	
 <div data-role="content">
-
-
 <ul data-role="listview" data-inset="true" data-divider-theme="a"  >
 <li data-role="list-divider">
 <div id="myLiveBack">	
-	<video autoplay="autoplay" id="ikdsPlayer" width="100%" src="http://api.itv1234.com/v/cctv5.php"  controls="controls"></video></br><!-- / -->
+<video autoplay="autoplay" id="ikdsPlayer" width="100%" src="http://api.itv1234.com/v/iptv.php?id=cctv13"  controls="controls"></video></br>
 <select onchange="getLiveKey(this.options[this.selectedIndex].value)" id="plauURL">
+<option value="http://183.252.176.10/PLTV/88888888/224/3221225925/index.m3u8">线路1-点这里切换线路</option>
+<option value="http://183.251.61.207/PLTV/88888888/224/3221225803/index.m3u8">线路2-点这里切换线路</option>
+<option value="http://183.251.61.207/PLTV/88888888/224/3221225925/index.m3u8">线路3-点这里切换线路</option>
+<option value="http://183.251.61.207/PLTV/88888888/224/3221225912/index.m3u8">线路4-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_1.m3u8">线路5-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_2.m3u8">线路6-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_3.m3u8">线路7-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_4.m3u8">线路8-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_5.m3u8">线路9-点这里切换线路</option>
 
-<option value="http://api.itv1234.com/v/cctv5.php">线路1-高清</option>
-<option value="http://tvindexlivephone.cmjx.ysten.com:8080/ysten-businessmbble/live/cctv-5/1.m3u8">线路2-高清</option>
-<option value="http://api.itv1234.com/v/iptv.php?id=cctv5hd">线路3-高清</option>
-<option value="http://223.110.245.136/PLTV/3/224/3221227166/index.m3u8">线路4-高清</option>
-<option value="http://api.itv1234.com/migu.php?id=608788135">线路5-高清</option>
-<option value="http://ivi.bupt.edu.cn/hls/cctv5hd.m3u8">线路6-高清</option>
-<option value="http://183.252.176.44//PLTV/88888888/224/3221225925/index.m3u8">线路7-高清</option>
-<option value="http://171.107.188.135/58.200.131.3/hls/cctv5hd.m3u8">线路8-高清</option>
-			<option value="http://183.252.176.45/PLTV/88888888/224/3221225925/index.m3u8">线路9-高清</option>
-		
-		
-<br></select>   
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_7.m3u8">线路10-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05+_1.m3u8">线路11-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05+_2.m3u8">线路12-点这里切换线路</option>
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05+_3.m3u8">线路13-点这里切换线路</option>
+<option value="http://183.251.61.207/PLTV/88888888/224/3221225939/index.m3u8">线路14-点这里切换线路</option>
+<option value="http://183.252.176.10/PLTV/88888888/224/3221225939/index.m3u8">线路15-点这里切换线路</option>
+<option value="http://183.251.61.207/PLTV/88888888/224/3221225915/index.m3u8">线路16-点这里切换线路</option>
+<option value="http://61.218.59.193:80/live/ch121/playlist.m3u8">线路801-点这里切换线路</option>
+<option value="http://42.202.153.91/yfhdl.cdn.zhanqi.tv/zqlive/19969_TnDT2.m3u8">线路802-点这里切换线路</option>
+
+<option value="http://ax.micaesoft.com/YMitv/YMITV_CN_CNcctv05_6.m3u8">线路99-点这里切换线路</option>
+<br></select>  
+<div align="center"> 
 <li  data-role="list-divider"  style="text-align:center">如不能播放请选择其他线路！</li>
 </div>
-
-	
+<h4><a href="https://1li.github.io/a/fk.html"   style='text-decoration:none; color:#E62129;' >如有问题或建议，请反馈给我</a></h4>	
 <div class="headerNfooter" data-role="footer" data-theme="f" data-position="fixed" align="center"  >
-    <a href="http://t.cn/RQ83y27"   data-icon="grid"  data-role="button">关注手机电视</a>	
-    <a href="http://t.cn/R8GH6wv"  data-icon="star"  data-role="button">这么好的电视，记得和朋友共享哦</a>	
+<a href="http://t.cn/RQ83y27"   data-icon="grid"  data-role="button">关注手机电视</a>	
+<a href="http://t.cn/R8GH6wv"  data-icon="star"  data-role="button">这么好的电视，记得和朋友共享哦</a>	
 </div>
-
 </div>	
 <div data-role="footer">
 <div align="center">	
 <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwNDA4NTM0MA==&scene=124#wechat_redirect">
-<img src="https://i1l.github.io/a/z.png" width="100%"/></a>
-
+<img src="https://i1l.github.io/a/tb.png" width="100%"/></a>
 <h4><a href="http://x.dianso.net/0871km/"   style='text-decoration:none; color:#00FF00;' >所有源来自互联网</a></h4>	
-<h4><a href="https://1li.github.io/a/t.html"   style='text-decoration:none; color:#00FF00;' >版权声明©手机电视</a></h4>	
+<h4><a href="https://1li.github.io/a/v.html"   style='text-decoration:none; color:#00FF00;' >版权声明©手机电视</a></h4>	
 </div>
 </body>
 </html>
